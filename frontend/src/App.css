@@ -1,0 +1,292 @@
+.login-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(40, 0, 0, 0.88),
+      rgba(0, 0, 0, 0.97)
+    );
+  color: white;
+}
+
+/* Header */
+
+.login-header {
+  height: 105px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 11.5%;
+}
+
+.netflix-logo {
+  color: #e50914;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+/* Login */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 42px;
+}
+
+.login-box {
+  width: 520px;
+}
+
+.login-box h1 {
+  font-size: 36px;
+  margin-bottom: 28px;
+}
+
+/* Inputs */
+
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 66px;
+
+  padding: 0 18px;
+
+  background: #1c1415;
+  color: white;
+
+  border: 1px solid #777;
+  border-radius: 4px;
+
+  font-size: 18px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #c5c5c5;
+}
+
+.input-group input:focus {
+  border-color: white;
+}
+
+/* Errors */
+
+.error-message {
+  color: #ffb3b3;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.server-error {
+  background: #e87c03;
+  color: white;
+
+  padding: 12px;
+  margin: 15px 0;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+}
+
+/* Login Button */
+
+.login-button {
+  width: 100%;
+  height: 58px;
+
+  margin-top: 8px;
+
+  background: #e50914;
+  color: white;
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: #f40612;
+}
+
+.login-button:disabled {
+  background: #777;
+  cursor: not-allowed;
+}
+
+/* Options */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-options input {
+  width: 18px;
+  height: 18px;
+}
+
+.help-link {
+  cursor: pointer;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}
+
+/* Signup */
+
+.signup-section {
+  margin-top: 55px;
+  color: #737373;
+}
+
+.signup-section p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.signup-link {
+  color: white;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.signup-section small {
+  display: block;
+
+  color: #8c8c8c;
+
+  line-height: 1.5;
+
+  font-size: 13px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  min-height: 100vh;
+
+  background: #000;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.dashboard h1 {
+  color: #e50914;
+  font-size: 48px;
+}
+
+.dashboard p {
+  font-size: 20px;
+}
+
+.dashboard button {
+  padding: 12px 30px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.dashboard button:hover {
+  background: #f40612;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .login-header {
+    height: 80px;
+    padding-left: 30px;
+  }
+
+  .netflix-logo {
+    font-size: 36px;
+  }
+
+  .login-container {
+    padding: 35px 30px;
+  }
+
+  .login-box {
+    width: 100%;
+  }
+
+  .login-box h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-header {
+    padding-left: 20px;
+  }
+
+  .netflix-logo {
+    font-size: 30px;
+  }
+
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .input-group input {
+    height: 58px;
+    font-size: 16px;
+  }
+
+  .login-button {
+    height: 54px;
+  }
+
+  .login-options {
+    font-size: 13px;
+  }
+
+  .signup-section {
+    margin-top: 40px;
+  }
+}
