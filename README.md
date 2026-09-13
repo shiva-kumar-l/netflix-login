@@ -1,6 +1,3 @@
-Sure — here’s a slightly more complete but still **short and professional README**:
-
-````markdown
 # Netflix Login Clone
 
 A Netflix-inspired login application built using **React, Vite, Node.js, and Express.js**.
@@ -98,5 +95,4 @@ The backend checks the submitted credentials against mock user data and returns 
 * Frontend and backend can be deployed using Vercel
 * Production API URL is configured through environment variables
 
-```
 ```
